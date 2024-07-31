@@ -31,7 +31,7 @@ services:
       - "8080:8080"
     # labels:
     #   - "traefik.enable=true"
-    #   - "traefik.http.routers.backend.rule=Host(`denieskresna.top`)"
+    #   - "traefik.http.routers.backend.rule=Host(`denieskresnanya.top`)"
     #   - "traefik.http.routers.backend.entrypoints=websecure"
     #   - "traefik.http.routers.backend.tls.certresolver=myresolver"
     #   - "traefik.http.services.backend.loadbalancer.server.port=8080"  # Ensure this matches the internal port
@@ -51,10 +51,10 @@ services:
       - 3334:3306
     environment:
       - MYSQL_ROOT_HOST=localhost
-      - MYSQL_USER=doadmin
-      - MYSQL_PASSWORD=ReArKUDiECGqYLDe
-      - MYSQL_DATABASE=sined
-      - MYSQL_ROOT_PASSWORD=ReArKUDiECGqYLDe
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=halohalobandung
+      - MYSQL_DATABASE=backend
+      - MYSQL_ROOT_PASSWORD=halohalobandung
     volumes:
       - database_mysql:/var/lib/mysql
 
